@@ -107,6 +107,10 @@ $ source ~/.bashrc
 $ go get github.com/peco/peco/cmd/peco
 $ go get github.com/motemen/ghq
 ```
+ghq setting
+```sh
+$ git config --global ghq.root ~/.ghq/src
+```
 
 ~/.bashrcに追記
 ```sh
