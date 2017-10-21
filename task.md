@@ -17,6 +17,11 @@ $ env LANGUAGE=C LC_MESSAGES=C xdg-user-dirs-gtk-update
 $ sudo apt remove unity-webapps-common
 ```
 
+## ゴミ箱削除
+```sh
+gsettings set org.gnome.nautilus.desktop trash-icon-visible false
+```
+
 ## 各種コーデック
 ```sh
 $ sudo apt install ubuntu-restricted-extras
