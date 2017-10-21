@@ -32,6 +32,16 @@ $ sudo apt install build-essential
 ```sh
 $ sudo apt install git
 ```
+```sh
+$ git config --global user.name "name"
+$ git config --global user.email email@example.com
+$ git config --global core.excludesfile ~/.gitignore_global
+$ touch ~/.gitignore_global
+```
+```sh
+$ ssh-keygen
+```
+
 
 ## curl
 ```sh
