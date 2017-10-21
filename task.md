@@ -33,6 +33,11 @@ $ sudo apt install build-essential
 $ sudo apt install git
 ```
 
+## curl
+```sh
+$ sudo apt install crul
+```
+
 ## anyenv
 ```sh
 $ git clone https://github.com/riywo/anyenv ~/.anyenv
