@@ -27,6 +27,12 @@ gsettings set org.gnome.nautilus.desktop trash-icon-visible false
 $ sudo apt install ubuntu-restricted-extras
 ```
 
+## Wine
+```sh
+$ sudo apt install -y wine-stable winetricks
+$ winetricks allfonts
+```
+
 # 開発
 ## なんか色々なビルドツール群
 ```sh
