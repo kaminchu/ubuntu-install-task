@@ -17,6 +17,15 @@ $ env LANGUAGE=C LC_MESSAGES=C xdg-user-dirs-gtk-update
 $ sudo apt remove unity-webapps-common
 ```
 
+## gparted
+```sh
+$ sudo apt install gparted
+```
+ubuntu17.10でgpartedとかsudoで実行するやつ動かないのでこうした
+```sh
+$ xhost si:localuser:root
+```
+
 ## ゴミ箱削除
 ```sh
 gsettings set org.gnome.nautilus.desktop trash-icon-visible false
