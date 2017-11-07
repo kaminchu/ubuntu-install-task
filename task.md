@@ -51,7 +51,7 @@ $ sudo apt install build-essential
 ## bashの$の左側が長くてうざい
 `~/.bashrc`の下の方に
 ```
-PS1='\h:\W \u\$'
+PS1='\h:\W$ '
 ```
 
 ## git
