@@ -17,6 +17,11 @@ $ env LANGUAGE=C LC_MESSAGES=C xdg-user-dirs-gtk-update
 $ sudo apt remove unity-webapps-common
 ```
 
+## ウィンドウコントロールを左に移動
+```sh
+$ gsettings set org.gnome.desktop.wm.preferences button-layout close,minimize,maximize:
+```
+
 ## gparted
 ```sh
 $ sudo apt install gparted
