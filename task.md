@@ -30,6 +30,10 @@ ubuntu17.10でgpartedとかsudoで実行するやつ動かないのでこうし�
 ```sh
 $ xhost si:localuser:root
 ```
+作業おわったら、権限を削除する
+```sh
+$ xhost -si:localuser:root
+```
 
 ## ゴミ箱削除
 ```sh
