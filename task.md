@@ -13,9 +13,7 @@ $ env LANGUAGE=C LC_MESSAGES=C xdg-user-dirs-gtk-update
 ```
 
 ## Amazon削除
-```sh
-$ sudo apt remove unity-webapps-common
-```
+dockから削除
 
 ## 素のGNOMEにしたい
 ```sh
@@ -86,7 +84,7 @@ $ ssh-keygen
 
 ## curl
 ```sh
-$ sudo apt install crul
+$ sudo apt install curl
 ```
 
 ## anyenv
