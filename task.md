@@ -168,3 +168,7 @@ $ sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode
 $ sudo apt-get update
 $ sudo apt-get install code
 ```
+## idea
+```sh
+$ sudo snap install intellij-idea-ultimate --classic --edge
+```
