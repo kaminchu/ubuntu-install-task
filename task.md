@@ -173,6 +173,9 @@ $ sudo apt-get update
 $ sudo apt-get install code
 ```
 ## idea
+有料版です↓
 ```sh
 $ sudo snap install intellij-idea-ultimate --classic --edge
 ```
+ライセンスはこちらで買う  
+http://samuraism.com/products/jetbrains/intellij-idea
