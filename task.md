@@ -14,6 +14,10 @@ $ env LANGUAGE=C LC_MESSAGES=C xdg-user-dirs-gtk-update
 
 ## Amazon削除
 dockから削除
+※17.04以前は↓
+```sh
+$ sudo apt remove unity-webapps-common
+```
 
 ## 素のGNOMEにしたい
 ```sh
