@@ -1,0 +1,48 @@
+{
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay":1000,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.DS_Store": true,
+        "**/.vscode": true,
+        "**/.idea": true,
+        "**/*.ruby-version": true,
+        "**/*.node-version": true
+    },
+    "search.exclude": {
+        "**/node_modules": true
+    },
+    
+    /*静的チェック関連*/
+    "flow.pathToFlow": "$(npm bin)/flow",
+    "flow.useNPMPackagedFlow": true,
+    "javascript.validate.enable": false,
+
+    /*エディタ設定*/
+    "editor.mouseWheelZoom": true,
+    "editor.renderWhitespace": "boundary",
+    "editor.tabSize": 2,
+
+    /* なんだっけ */
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editor.enablePreview": false,
+    "window.restoreWindows": "none",
+
+    /* textlint */
+    "textlint.nodePath": "./node_modules",
+    "textlint.autoFixOnSave": true,
+    "textlint.trace": "verbose",
+    "textlint.run": "onSave",
+    "window.zoomLevel": -1,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressUpdateNotice": true,
+        "suppressWelcomeNotice": false
+    }
+}

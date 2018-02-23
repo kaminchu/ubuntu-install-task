@@ -11,6 +11,10 @@ $ sudo apt upgrade
 ```sh
 $ env LANGUAGE=C LC_MESSAGES=C xdg-user-dirs-gtk-update
 ```
+こっちがいいかも？
+```sh
+$ env LANGUAGE=C LC_MESSAGES=C xdg-user-dirs-update --force
+```
 
 ## Amazon削除
 dockから削除
@@ -68,7 +72,7 @@ $ sudo apt install build-essential
 ## bashの$の左側が長くてうざい
 `~/.bashrc`の下の方に
 ```
-PS1='\h:\u \W$ '
+export PS1="\u@\h:\W\\$ \[$(tput sgr0)\]"
 ```
 
 ## git
@@ -166,16 +170,45 @@ $ source ~/.bashrc
 
 ## vscode
 ```sh
-$ curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-$ sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
-$ sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
-$ sudo apt-get update
-$ sudo apt-get install code
+$ sudo snap install --classic vscode
 ```
 ## idea
-有料版です↓
+有料版↓
 ```sh
-$ sudo snap install intellij-idea-ultimate --classic --edge
+$ sudo snap install intellij-idea-ultimate --classic
 ```
+```sh
+alias idea='intellij-idea-ultimate $1'
+```
+
 ライセンスはこちらで買う  
 http://samuraism.com/products/jetbrains/intellij-idea
+
+※ギザギザしたら(install時に---edge付けるとなった)↓
+アンチエイリアス
+http://yamori-jp.blogspot.jp/2012/09/linux-intellij-11.html
+
+
+## gitkraken
+https://www.gitkraken.com/
+```sh
+$ cd ~/Download
+$ wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
+$ dpkg -i gitkraken-amd64.deb
+```
+
+comanndからの起動の参考  
+https://qiita.com/nwtgck/items/18dd0b805b28c6d81008
+
+```sh
+alias gk='gitkraken -p $1'
+```
+
+## copyするため
+```sh
+$ sudo apt-get install xsel
+```
+```
+alias pbcopy='xsel --clipboard --input'
+```
+
