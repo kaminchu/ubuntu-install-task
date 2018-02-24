@@ -11,11 +11,11 @@ echo $pass | sudo apt upgrade -y
 env LANGUAGE=C LC_MESSAGES=C xdg-user-dirs-update --force
 
 ## 諸々
-echo $pass | sudo apt install -y gparted ubuntu-restricted-extras 
+echo $pass | sudo apt install -y gparted
 
 # develop
 ## 諸々
-echo $pass | sudo apt install -y build-essential git curl xsel
+echo $pass | sudo apt install -y git curl xsel
 
 ## bash周り
 touch ~/.bash_aliases
