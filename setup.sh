@@ -35,14 +35,15 @@ eval "$(anyenv init -)"
 
 
 ## goenv
-anyenv install goenv
-exec $SHELL -l
-goenv install 1.10.0
-goenv global 1.10.0
-echo 'export GOPATH=$HOME/.go' >> ~/.bashrc
-echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bashrc
-export GOPATH=$HOME/.go
-export PATH=$PATH:$GOPATH/bin
+# anyenv install goenv
+# exec $SHELL -l
+# goenv install 1.10.0
+# goenv global 1.10.0
+# echo 'export GOPATH=$HOME/.go' >> ~/.bashrc
+# echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bashrc
+# export GOPATH=$HOME/.go
+# export PATH=$PATH:$GOPATH/bin
+sudo snap install go --classic
 
 ## ghq peco
 go get github.com/peco/peco/cmd/peco
