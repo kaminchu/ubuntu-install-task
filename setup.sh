@@ -37,8 +37,8 @@ eval "$(anyenv init -)"
 ## goenv
 anyenv install goenv
 exec $SHELL -l
-goenv install 1.9.5
-goenv global 1.9.5
+goenv install 1.10.0
+goenv global 1.10.0
 echo 'export GOPATH=$HOME/.go' >> ~/.bashrc
 echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bashrc
 export GOPATH=$HOME/.go
