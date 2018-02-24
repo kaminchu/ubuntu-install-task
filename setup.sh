@@ -42,6 +42,7 @@ echo 'export GOPATH=$HOME/.go' >> ~/.bashrc
 echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bashrc
 export GOPATH=$HOME/.go
 export PATH=$PATH:$GOPATH/bin
+exec $SHELL -l
 
 ## ghq peco
 go get github.com/peco/peco/cmd/peco
