@@ -1,21 +1,18 @@
 #!/bin/bash
-echo "password?"
-read pass
-
 # basic
 ## update
-echo $pass | sudo apt update
-echo $pass | sudo apt upgrade -y
+sudo apt update
+sudo apt upgrade -y
 
 ## ディレクトリ名変更
 env LANGUAGE=C LC_MESSAGES=C xdg-user-dirs-update --force
 
 ## 諸々
-echo $pass | sudo apt install -y gparted
+sudo apt install -y gparted
 
 # develop
 ## 諸々
-echo $pass | sudo apt install -y git curl xsel
+sudo apt install -y git curl xsel
 
 ## bash周り
 touch ~/.bash_aliases
@@ -52,10 +49,10 @@ echo "alias cr='cd $(ghq list -p | peco)'" >> ~/.bash_aliases
 source ~/.bashrc
 
 ## vscode
-echo $pass | sudo snap install -y --classic vscode
+sudo snap install -y --classic vscode
 
 ## idea
-echo $pass | sudo snap install intellij-idea-ultimate --classic
+sudo snap install intellij-idea-ultimate --classic
 echo "alias idea='intellij-idea-ultimate $1'" >> ~/.bash_aliases
 source ~/.bashrc
 
