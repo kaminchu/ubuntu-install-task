@@ -17,7 +17,7 @@ sudo apt install -y git curl xsel
 ## bash周り
 touch ~/.bash_aliases
 echo 'export PS1="\u@\h:\W\\$ \[$(tput sgr0)\]"' >> ~/.bashrc
-echo "alias pbcopy='xsel --clipboard --input" >> ~/.bash_aliases
+echo "alias pbcopy='xsel --clipboard --input'" >> ~/.bash_aliases
 
 ## git
 git config --global core.excludesfile ~/.gitignore_global
