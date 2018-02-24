@@ -22,9 +22,9 @@ echo "alias pbcopy='xsel --clipboard --input" >> ~/.bash_aliases
 ## git
 git config --global core.excludesfile ~/.gitignore_global
 touch ~/.gitignore_global
-echo '*~' >> /.gitignore_global
-echo './idea' >> /.gitignore_global
-echo '.Trash-*' >> /.gitignore_global
+echo '*~' >> ~/.gitignore_global
+echo './idea' >> ~/.gitignore_global
+echo '.Trash-*' >> ~/.gitignore_global
 
 ## anyenv
 git clone https://github.com/riywo/anyenv ~/.anyenv
@@ -36,13 +36,13 @@ eval "$(anyenv init -)"
 
 ## goenv
 anyenv install goenv
+exec $SHELL -l
 goenv install 1.9.5
 goenv global 1.9.5
 echo 'export GOPATH=$HOME/.go' >> ~/.bashrc
 echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bashrc
 export GOPATH=$HOME/.go
 export PATH=$PATH:$GOPATH/bin
-exec $SHELL -l
 
 ## ghq peco
 go get github.com/peco/peco/cmd/peco
