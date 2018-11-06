@@ -7,6 +7,9 @@ sudo apt upgrade -y
 ## ディレクトリ名変更
 env LANGUAGE=C LC_MESSAGES=C xdg-user-dirs-update --force
 
+# ゴミ箱消す
+gsettings set org.gnome.nautilus.desktop trash-icon-visible false
+
 ## 諸々
 sudo apt install -y gparted
 
