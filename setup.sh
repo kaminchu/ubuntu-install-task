@@ -90,3 +90,4 @@ sudo apt-get install -y docker-ce
 # - アイコンをいい感じにする
 # - ディスプレイの配置調整(4KとfullHDを混在させると、サイズ調整がうまくいかないのなんとかならないかな)
 # - 秘密鍵の作成`ssh-keygen -t rsa`と公開鍵`cat ~/.ssh/id_rsa.pub`の各種サービスへの登録
+# - 日本語入力できるようにするために、右上のアイコンでmozcを選択
