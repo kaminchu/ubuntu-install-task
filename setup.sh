@@ -40,6 +40,10 @@ echo 'eval "$(anyenv init -)"' >> ~/.bashrc
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
 
+## node環境を素で入れたいなら
+# curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+# sudo apt-get install -y nodejs yarn
+
 
 ## goenv
 # anyenv install goenv
