@@ -76,6 +76,12 @@ source ~/.bashrc
 # echo "alias gk='gitkraken -p $1'" >> ~/.bash_aliases
 # source ~/.bashrc
 
+## docker
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable test edge"
+sudo apt-get update
+sudo apt-get install -y docker-ce
+
 ## 手動でやること
 # - Chromeのdebをダウンロードして実行
 # - VSCodeのdebをダウンロードして実行
