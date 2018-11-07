@@ -47,6 +47,12 @@ eval "$(anyenv init -)"
 # export GOPATH=$HOME/.go
 # export PATH=$PATH:$GOPATH/bin
 sudo snap install go --classic
+echo 'export GOPATH=$HOME/.go' >> ~/.bashrc
+echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bashrc
+
+# この後のgo getで使いたいから
+export GOPATH=$HOME/.go
+export PATH=$PATH:$GOPATH/bin
 
 ## ghq peco
 go get github.com/peco/peco/cmd/peco
