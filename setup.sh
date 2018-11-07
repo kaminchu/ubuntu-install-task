@@ -52,7 +52,7 @@ sudo snap install go --classic
 go get github.com/peco/peco/cmd/peco
 go get github.com/motemen/ghq
 git config --global ghq.root ~/.ghq/src
-echo "alias cr='cd $(ghq list -p | peco)'" >> ~/.bash_aliases
+echo "alias cr='cd \$(ghq list -p | peco)'" >> ~/.bash_aliases
 
 ## vscode
 # Ubuntu18.10ではsnapでvscode入れると激遅プンプン丸だったので、素直にdeb落として入れたほうがいい
