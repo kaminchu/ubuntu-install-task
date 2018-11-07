@@ -55,7 +55,8 @@ git config --global ghq.root ~/.ghq/src
 echo "alias cr='cd $(ghq list -p | peco)'" >> ~/.bash_aliases
 
 ## vscode
-sudo snap install -y --classic vscode
+# Ubuntu18.10ではsnapでvscode入れると激遅プンプン丸だったので、素直にdeb落として入れたほうがいい
+# sudo snap install --classic vscode
 
 ## idea
 sudo snap install intellij-idea-ultimate --classic
