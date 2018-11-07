@@ -91,7 +91,7 @@ sudo apt-get install -y docker-ce
 # - VSCodeのdebをダウンロードして実行
 # - VSCodeの日本語化
 # - ideaのアクティベート
-# - アイコンをいい感じにする
+# - アイコンをいい感じにする(ファイラ,terminal,テキストエディタ,vscode,chrome)
 # - ディスプレイの配置調整(4KとfullHDを混在させると、サイズ調整がうまくいかないのなんとかならないかな)
 # - 秘密鍵の作成`ssh-keygen -t rsa`と公開鍵`cat ~/.ssh/id_rsa.pub`の各種サービスへの登録
 # - 日本語入力できるようにするために、右上のアイコンでmozcを選択
