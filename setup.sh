@@ -96,3 +96,5 @@ sudo apt-get install -y docker-ce
 # - 秘密鍵の作成`ssh-keygen -t rsa`と公開鍵`cat ~/.ssh/id_rsa.pub`の各種サービスへの登録
 # - 日本語入力できるようにするために、右上のアイコンでmozcを選択
 # - 全角/半角の切り替えを使いやすく[参考](https://qiita.com/yas-nyan/items/55e764304c67736ff9ba)
+# - GnomeTweek入れて、中クリックペーストを無効化する
+
